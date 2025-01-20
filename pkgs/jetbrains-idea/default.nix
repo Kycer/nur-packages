@@ -21,7 +21,6 @@ stdenv.mkDerivation rec {
 
     wrapProgram $out/idea-IU-243.23654.117/bin/idea --set JAVA_HOME ${stdenv.cc.cc}/libexec/java
 
-    ln -s $out/idea-IU-243.23654.117/bin/idea $out/bin/idea
   '';
 
 }
