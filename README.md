@@ -2,6 +2,31 @@
 
 **A template for [NUR](https://github.com/nix-community/NUR) repositories**
 
+## mark-shot
+
+Mark Shot is a screenshot, annotation, and recording tool for `x86_64-linux`
+and `aarch64-linux`. This package uses the upstream release binaries.
+
+```sh
+nix build .#mark-shot
+nix run .#mark-shot
+```
+
+With an existing nixpkgs channel, `nix-build -A mark-shot` uses the same package
+definition through the NUR entry point.
+
+## sqlmux
+
+SQLMux is a terminal database client with Vim keybindings. This package uses the
+upstream release binaries for x86-64 and ARM64 on Linux and macOS.
+
+```sh
+nix build .#sqlmux
+nix run .#sqlmux
+```
+
+With an existing nixpkgs channel, use `nix-build -A sqlmux`.
+
 ## Setup
 
 1. Click on [Use this template](https://github.com/nix-community/nur-packages-template/generate) to start a repo based on this template. (Do _not_ fork it.)
